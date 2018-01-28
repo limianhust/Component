@@ -1,0 +1,77 @@
+
+.diagleBig{
+  width: 60.46%;
+
+  min-width: 9.5rem;
+}
+.diagleSmall{
+  width: 26.45833333%;
+  min-width: 5.08rem;
+}
+.diagleMiddle{
+  width: 41.46%;
+  min-width: 7.96rem;
+}
+
+
+
+
+.dialog-box {
+  position: absolute;
+  margin-bottom: .50rem;
+  background-color: #ffffff;
+  //top: 1.88rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: .02rem;
+}
+
+.dialog-header {
+
+  height: @header-height;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: .01rem solid #e5eaf2;
+  box-sizing: border-box;
+  padding: 0 .149rem 0 .10rem;
+  border-bottom: .01rem solid #e5eaf2;
+  .dialog-title {
+    font-size: @min-title-font-size;
+    color: #6c7b88;
+    line-height: @header-height;
+  }
+  .dialog-close {
+    &:hover {
+      color: @text-font-color;
+    }
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: @header-height;
+  }
+}
+
+.dialog-body {
+  padding: .10rem;
+  overflow: auto;
+  max-height: 8rem;
+}
+
+.dialog-footer {
+  text-align: center;
+}
+
+.dialog-container{
+
+  display: flex;
+  align-items: center;
+  img{
+    width: .28rem;
+  }
+  span{
+    margin-left: .06rem;
+    font-size: .18rem;
+    color: #38455B;
+    font-weight: 600;
+  }
+}

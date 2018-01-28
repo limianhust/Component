@@ -1,0 +1,66 @@
+@header-height: 43px;
+@icon-font-size: 32px;
+/*页面字体大小*/
+@min-title-font-size: 14px; //小标题
+/*页面字体颜色*/
+@text-font-color: #93CCF5; //正文文字
+
+.message-box {
+  position: absolute;
+  width: 3rem;
+  min-width: 3rem;
+  margin-bottom: .5rem;
+  background-color: #ffffff;
+  top: 2.37rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: .06rem;
+}
+
+
+.message-body {
+  text-align: center;
+  .cell {
+    height: @icon-font-size;
+    line-height: @icon-font-size;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .icon-warning:before {
+    .cell;
+    font-size: .32rem;
+  }
+  .tips-content {
+    .cell;
+    font-size: .18rem;
+    color: #6c7b88;
+    font-weight: 500;
+    margin-left: .1rem;
+  }
+
+}
+
+.message-footer {
+  text-align: center;
+  .button {
+    width: 29.44%;
+    height: .3rem;
+  }
+}
+
+.message-close-c {
+
+  position: absolute;
+  left: 50%;
+  bottom: -1.2rem;
+  transform: translateX(-50%);
+
+  img {
+    cursor: pointer;
+    width: .42rem;
+    height: .42rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+

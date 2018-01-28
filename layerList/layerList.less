@@ -1,0 +1,58 @@
+.layer-list {
+  border: 1px solid #DADEE5;
+  background: rgba(255,255,255,1);
+  font-size: .14rem;
+  color: @mid-color-context;
+  margin-top: .1rem;
+  border-radius: 2px;
+  padding: .14rem .16rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  .layer-list-title {
+
+
+    .layer-list__input {
+      white-space: nowrap;
+      cursor: pointer;
+      outline: none;
+      display: inline-block;
+      width: .18rem;
+      height: .18rem;
+      background-image: url("../../../static/img/radio_not.png");
+      background-repeat: no-repeat;
+      background-size: .18rem .18rem;
+      background-position: 0 0;
+      position: relative;
+    }
+    .layer-list__label {
+      font-size: .14rem;
+      position: relative;
+      top: -0.03rem;
+      margin-left: .18rem;
+    }
+
+
+  }
+  .layer-list-operate img:first-child{
+    border-right: 1px solid #DADEE5;
+    padding-right: .1rem;
+  }
+  .layer-list-operate img:last-child{
+    padding-left: .1rem;
+  }
+  .layer-list-operate img{
+    width: 16px;
+    cursor: pointer;
+  }
+}
+.layer-list.layer-list-is-checked{
+  border: 1px solid @base-color;
+  box-shadow: 0 0 2px 0 @base-color;
+  .is-checked {
+    background-image: url("../../../static/img/radio.png");
+    background-repeat: no-repeat;
+    background-size: .18rem .18rem;
+    background-position: 0 0;
+  }
+}

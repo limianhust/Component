@@ -1,0 +1,95 @@
+@import "../../assets/css/mixin/mixin.less";
+.accordion{
+    min-height: 0.6rem;
+
+
+    .li-container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 0.6rem;
+        padding-left: 15px;
+        box-sizing: border-box;
+        border-bottom: 1px solid @mid-color-title;
+        cursor: pointer;
+    }
+
+    .container{
+        border-bottom: 1px solid @mid-color-title;
+    }
+
+    .text{
+        color: #EDF0F5;
+        font-size: 0.14rem;
+    }
+
+    .folder{
+        width: 18px;
+        height: 18px;
+        margin-left: 8px;
+        margin-right: 8px;
+        background-image: url("../../../static/img/ic_flodercopy@2x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .arrow{
+        width: 0.15rem;
+        height: 0.15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .arrow-right{
+        .triangle-right(6px,8px,6px,#9CA7B9);
+        transition: .3s;
+        &.rotate{
+            transform: rotate(90deg);
+            transition: .3s;
+        }
+    }
+
+
+    .arrow-down{
+        .triangle-down(6px,8px,6px,#9CA7B9);
+    }
+
+
+    //.fade-enter-active, .fade-leave-active {
+    //    transition: opacity .3s ease;
+    //}
+    //.fade-enter, .fade-leave-to /* .fade-leave-active in below version 2.1.8 */ {
+    //    transition: opacity .3s ease;
+    //}
+    //
+    //.fold1-enter-active {
+    //    animation-name: fold1-in;
+    //    animation-duration: .5s;
+    //}
+    //.fold1-leave-active {
+    //    animation-name: fold1-out;
+    //    animation-duration: .5s;
+    //}
+    //@keyframes fold1-in {
+    //    0% {
+    //        transform: translate3d(0, 100%, 0);
+    //    }
+    //    50% {
+    //        transform: translate3d(0, 50%, 0);
+    //    }
+    //    100% {
+    //        transform: translate3d(0, 0, 0);
+    //    }
+    //}
+    //@keyframes fold1-out {
+    //    0% {
+    //        transform: translate3d(0, 0, 0);
+    //    }
+    //    50% {
+    //        transform: translate3d(0, 50%, 0);
+    //    }
+    //    100% {
+    //        transform: translate3d(0, 100%, 0);
+    //    }
+    //}
+}

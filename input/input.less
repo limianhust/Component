@@ -1,0 +1,43 @@
+.as-form-input{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: .02rem;
+  border: .01rem solid #cccccc;
+  height: .42rem;
+  padding-left: 1em;
+}
+.as-form-input.cw-error{
+  border: .01rem solid @help-color-orange;
+  box-shadow: 0 0 .02rem 0 @help-color-orange;
+}
+.as-form-input:hover{
+  border: .01rem solid @base-color;
+  box-shadow: 0 0 .02rem 0 @base-color;
+}
+.as-form-input[disabled]:hover{
+  border: .01rem solid #cccccc;
+  box-shadow: none;
+}
+.as-form-input:focus{
+  border: .01rem solid @base-color;
+  box-shadow: 0 0 .02rem 0 @base-color;
+}
+.as-form-input::placeholder{
+  color: @mid-color-help-text;
+}
+
+.cw-input{
+    position: relative;
+    height: .42rem;
+    .iconfont{
+        position: absolute;
+        right: .1rem;
+        top: 0;
+        line-height: .42rem;
+        font-size: .2rem;
+        cursor: pointer;
+    }
+}

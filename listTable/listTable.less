@@ -1,0 +1,48 @@
+
+.listTable{
+
+
+  &-title{
+
+    margin-bottom: .19rem;
+
+  }
+
+
+  &-item{
+    margin-bottom: .1rem;
+    &:hover{
+      border: 0.01rem solid @help-color-blue;
+    }
+  }
+
+  &-name{
+    font-size: 0.16rem;
+    border-left: .05rem solid @help-color-blue;
+    padding-left: .14rem;
+    line-height:.22rem;
+    font-family: @main-font;
+    color: @mid-color-title;
+  }
+
+  &-addImage{
+    width: .24rem;
+    height: .24rem;
+    border: 1px solid @help-color-gray;
+    float: right;
+    margin-top: -10px;
+    //padding: .05rem;
+    img{
+      cursor: pointer;
+      display: block;
+      margin: auto;
+      margin-top: 50%;
+      transform: translateY(-50%);
+      width: .13rem;
+      height: .13rem;
+
+    }
+  }
+}
+
+

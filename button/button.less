@@ -1,0 +1,68 @@
+.as-button {
+    height: 0.32rem;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    outline: none;
+    border: 1px solid transparent;
+    color: #ffffff;
+    padding: 0.07rem 0.22rem;
+    background: @base-color;
+    border-radius: .16rem;
+}
+
+.as-button:disabled{
+    background: @base-color-disabled;
+    cursor: not-allowed;
+}
+
+.as-button.text{
+  background: #ffffff;
+  color: @mid-color-title;
+}
+
+.as-button.primary:not(.disabled):hover{
+  background: @base-color-hover;
+}
+.as-button.text:not(.disabled):hover{
+  background: @base-color-hover;
+  color: #ffffff;
+}
+
+.as-button.yellow {
+    background: @help-color-orange;
+}
+
+.as-button.yellow:not(.disabled):hover{
+  background: @help-color-orange-hover;
+  color: #ffffff;
+}
+
+.as-button.gray {
+    color: @mid-color-context;
+    background-color: @btn-gray-color;
+}
+
+.as-button.gray:not(.disabled):hover{
+    color: #ffffff;
+    background-color: @base-color-hover;
+}
+
+.as-button.transparent {
+    color: @btn-gray-color;
+    border: 1px solid @btn-gray-color;
+    background-color: transparent;
+}
+
+.as-button.transparent:not(.disabled):hover{
+    color: #ffffff;
+    background-color: @base-color-hover;
+}
+.as-button.xxl{
+    width: 2.04rem;
+}
+
+.as-button:disabled{
+    cursor: not-allowed;
+}

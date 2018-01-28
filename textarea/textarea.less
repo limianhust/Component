@@ -1,0 +1,30 @@
+.as-form-textarea{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 5rem;
+  outline: none;
+  border-radius: .02rem;
+  border: .01rem solid #cccccc;
+  height: 1.2rem;
+  padding: 1em;
+  resize:none;
+}
+.as-form-textarea.cw-error{
+  border: .01rem solid @help-color-orange;
+  box-shadow: 0 0 .02rem 0 @help-color-orange;
+}
+.as-form-textarea:hover{
+  border: .01rem solid @base-color;
+  box-shadow: 0 0 .02rem 0 @base-color;
+}
+.as-form-textarea[disabled]:hover{
+  border: .01rem solid #cccccc;
+  box-shadow: none;
+}
+.as-form-textarea:focus{
+  border: .01rem solid @base-color;
+  box-shadow: 0 0 .02rem 0 @base-color;
+}
+.as-form-textarea::placeholder{
+  color: @mid-color-help-text;
+}

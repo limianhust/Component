@@ -1,0 +1,84 @@
+.cw-switch {
+
+    display: inline-block;
+    width: 1.10rem;
+    height: .31rem;
+    line-height: .31rem;
+    border-radius: .24rem;
+    vertical-align: middle;
+    border: 0.01rem solid @base-color;
+    background-color: #EDF0F5;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+
+    .pick {
+        position: relative;
+        width: 1.10rem;
+        height: .31rem;
+        line-height: .31rem;
+        background-color: #EDF0F5;
+        border-radius: .25rem;
+
+
+        span {
+            position: absolute;
+            top: 0;
+            font-size: .12rem;
+            z-index: 3;
+        }
+        .cw-switch-on {
+            left: .17rem;
+            color: #fff;
+            &-select {
+                color: @base-color;
+            }
+        }
+        .cw-switch-off {
+            right: .17rem;
+            color: @base-color;
+            &-select {
+                color: #fff;
+            }
+        }
+        &:after {
+            content: "";
+            width: .6rem;
+            height: .31rem;
+            z-index: 1;
+            left: 0.0rem;
+            border-radius: .14rem;
+            position: absolute;
+            background-color: @base-color;
+            transition: left .3s ease-in-out;
+        }
+        &-checked {
+
+            &:after {
+                left: .51rem;
+                transition: left .3s ease-in-out;
+            }
+        }
+
+    }
+    &.small{
+        transform: scale(0.5,0.7);
+        .pick span{
+            font-size: .14rem;
+            transform: scale(1.4,1);
+            font-weight: 600;
+        }
+    }
+    &.transparent{
+        background: transparent;
+        .pick{
+            background: transparent;
+        }
+
+    }
+}
+
+
+
+
+

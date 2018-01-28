@@ -1,0 +1,32 @@
+.as-menu-tab-item {
+    box-sizing: border-box;
+    width: .79rem;
+    padding-top: .28rem;
+    padding-bottom: .28rem;
+    background: #ffffff;
+    border-bottom: .01rem solid #cccccc;
+    border-left: .03rem solid #ffffff;
+    cursor: pointer;
+    .as-menu-title {
+        display: block;
+        margin: .04rem auto 0 auto;
+        font-size: .12rem;
+        text-align: center;
+        cursor: pointer;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        width: .46rem;
+        height: .46rem;
+        color: rgba(56, 69, 91, 1);
+    }
+}
+
+.as-menu-tab-item.active {
+    border-left: .03rem solid @base-color;
+    .as-menu-title {
+        color: @base-color;
+    }
+
+}
