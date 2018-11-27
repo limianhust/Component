@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>throttle Demo</title>
+</head>
+
+<body>
+  <button id="press">点击</button>
+  <h1 id="chufazhanshi"></h1>
+  <script>
+    function throttle(fn, space = 1000) {
+      let time = 0;
+      let timer = null;
+      return function () {
+        let now = Date.now()
+        if ((now - time) > 1000) {
+          fn();
+          console.log('>1000')
+          time = now
+        } else {
+          let remainTime = 1000 - (Date.now() - time);
+          if (timer) {
+          } else {
+            timer = setTimeout(() => {
+              fn();
+              time = Date.now();
+              clearTimeout(timer);
+              timer = null;
+            }, remainTime);
+          }
+        }
+      }
+    }
+
+    function trigger() {
+      console.warn('触发', Date.now())
+      document.getElementById('chufazhanshi').innerText = '触发' + Date.now()
+    }
+
+    document.getElementById('press').addEventListener('click', throttle(trigger))
+  </script>
+</body>
+
+</html>
